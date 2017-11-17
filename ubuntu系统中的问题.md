@@ -39,7 +39,7 @@ Terminal：是否在打开程序的时候打开一个终端，通常使用false
  指令：`git config --global user.name "Your Name"`和
  `git config --global user.email "email@example.com"`绑定用户和邮箱
  2. 创建本地仓库
- 指令：`mkdir directory`创建空文件夹
- 指令：`git init`把这个目录变成Git可以管理的仓库
- `git add file2.txt file3.txt`添加文件到git仓库
- `git commit -m "add 3 files."`
+ 指令：`mkdir directory`，创建空文件夹
+ 指令：`git init`，把这个目录变成Git可以管理的仓库
+ `git add file2.txt file3.txt`，添加文件到git仓库
+ `git commit -m "add 2 files."`，把文件提交到仓库，引号中的是说明
