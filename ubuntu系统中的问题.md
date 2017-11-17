@@ -34,4 +34,7 @@ Terminal：是否在打开程序的时候打开一个终端，通常使用false
 
 ### **2.git的使用方法**
 
- 1. git安装
+ 1. git安装并在机器上进行绑定
+ 指令：`sudo apt-get install git` 安装git
+ 指令：`git config --global user.name "Your Name"`和
+ `git config --global user.email "email@example.com"`绑定用户和邮箱
