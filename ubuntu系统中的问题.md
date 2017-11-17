@@ -39,4 +39,6 @@ Terminal：是否在打开程序的时候打开一个终端，通常使用false
  指令：`git config --global user.name "Your Name"`和
  `git config --global user.email "email@example.com"`绑定用户和邮箱
  2. 创建本地仓库
- 指令：``
+ 指令：`mkdir directory`创建空文件夹
+ 指令：`git init`把这个目录变成Git可以管理的仓库
+ 
