@@ -43,5 +43,6 @@ Terminal：是否在打开程序的时候打开一个终端，通常使用false
   - `git init`，把这个目录变成Git可以管理的仓库
   -  `git add file2.txt file3.txt`，添加文件到git仓库
   - `git commit -m "add 2 files."`，把文件提交到仓库，引号中的是说明
- 
-
+ 3. 检查当前库的状态
+ `git status`查看当前的文件状态
+ `git diff`查看文件修改前后的不同状态(可以)
