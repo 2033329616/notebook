@@ -41,7 +41,7 @@ Terminal：是否在打开程序的时候打开一个终端，通常使用false
  2. 创建本地仓库
   `mkdir directory`，创建空文件夹，在该文件夹下：
   - `git init`，把这个目录变成Git可以管理的仓库
-  -  `git add file2.txt file3.txt`，添加文件到git仓库
+  -  `git add file2.txt file3.txt`，添加文件到git仓库，该文件只能在该仓库文件夹下
   - `git commit -m "add 2 files."`，把文件提交到仓库，引号中的是说明
  3. 检查当前库的状态
  `git status`查看当前的文件状态
