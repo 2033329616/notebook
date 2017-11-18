@@ -92,6 +92,8 @@ Terminal：是否在打开程序的时候打开一个终端，通常使用false
 
  1. 在github上建立仓库
  2. 使用`git clone git@github.com:account_name/repository_name.git`，将远程仓库克隆到本地
+ - 要克隆一个仓库，首先必须知道仓库的地址，然后使用git clone命令克隆。
+Git支持多种协议，包括https，但通过ssh支持的原生git协议速度最快
 
 	 
 
