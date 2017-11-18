@@ -82,6 +82,12 @@ Terminal：是否在打开程序的时候打开一个终端，通常使用false
 `git remote add origin git@github.com:account_name/test.git` 关联仓库
 然后使用`git push -u origin master`首次将本地仓库推送个远程仓库
 之后直接使用`git push origin master` 就可以了
+
+注意：
+- 初次push需要验证GitHub服务器的Key
+- 如果push失败，error: failed to push some refs to git
+
+
 	 
 
  
