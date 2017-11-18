@@ -46,3 +46,22 @@ Terminal：是否在打开程序的时候打开一个终端，通常使用false
  3. 检查当前库的状态
  `git status`查看当前的文件状态
  `git diff`查看文件修改前后的不同状态(可以加单一个文件名，仅查看该文件的信息)
+ 
+ 
+ 
+### **3.使用apt-file来查看安装的文件**
+`sudo apt-get install apt-file` 安装该软件
+安装完以后系统会提示你update，如果没有提示，在终端输入如下命令：
+`sudo apt-file update` 更新apt-file
+apt-file 是用来查找某个命令或者某一个库所在的包的，具体用法如下：
+`apt-file search libz.so.1`
+```
+lib32z1: /usr/lib32/libz.so.1
+lib32z1: /usr/lib32/libz.so.1.2.8
+libx32z1: /usr/libx32/libz.so.1
+libx32z1: /usr/libx32/libz.so.1.2.8
+libzadc1: /lib/x86_64-linux-gnu/genwqe/libz.so.1
+zlib1g: /lib/x86_64-linux-gnu/libz.so.1
+zlib1g: /lib/x86_64-linux-gnu/libz.so.1.2.8
+```
+所以使用`sudo apt-get install lib32z1 ` 解决问题
