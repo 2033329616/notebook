@@ -86,7 +86,7 @@ Terminal：是否在打开程序的时候打开一个终端，通常使用false
 注意：
 - 初次push需要验证GitHub服务器的Key
 - 如果push失败，出现`error: failed to push some refs to git`错误，使用指令：
-`git pull --rebase origin master`将README.txt文件pull到本地仓库，
+`git pull --rebase origin master`将README.txt文件pull到本地仓库，再push就可以了
 
 	 
 
