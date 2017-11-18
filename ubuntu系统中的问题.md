@@ -70,7 +70,8 @@ Terminal：是否在打开程序的时候打开一个终端，通常使用false
 - `git checkout -- file`，只有仓库中有该文件才可以恢复
 
 ### **3. 使用github托管git的本地仓库**
- 
+ 将本地的仓库推送到github远程仓库
+
  
  
  
