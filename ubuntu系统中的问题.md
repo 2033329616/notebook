@@ -87,7 +87,6 @@ Terminal：是否在打开程序的时候打开一个终端，通常使用false
 - 初次push需要验证GitHub服务器的Key
 - 如果push失败，error: failed to push some refs to git
 
-
 	 
 
  
