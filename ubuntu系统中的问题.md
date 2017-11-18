@@ -73,7 +73,8 @@ Terminal：是否在打开程序的时候打开一个终端，通常使用false
  
  
  
-### **3.使用apt-file来查看安装的文件**
+ 
+### **4.使用apt-file来查看安装的文件**
 `sudo apt-get install apt-file` 安装该软件
 安装完以后系统会提示你update，如果没有提示，在终端输入如下命令：
 `sudo apt-file update` 更新apt-file
