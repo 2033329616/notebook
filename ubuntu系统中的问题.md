@@ -77,7 +77,11 @@ Terminal：是否在打开程序的时候打开一个终端，通常使用false
  `ssh-keygen -t rsa -C "youremail@example.com"`，遇到提示后一直按回车即可，会在家目录下生成.ssh文件夹，里面有两个密钥对id_rsa(私钥)和id_rsa.pub(公钥)
  2. 登陆GitHub，打开“Account settings”，“SSH Keys”页面：
  然后，点“Add SSH Key”，填上任意Title，在Key文本框里粘贴id_rsa.pub文件的内容，点“Add Key”即可
-	 3. 建立一个仓库，这里取名字`test`该仓库最好初始化一个README.txt
+3. 建立一个仓库，这里取名字`test`该仓库最好初始化一个README.txt
+在本地仓库输入指令：
+`git remote add origin git@github.com:account_name/test.git` 关联仓库
+然后使用`git push -u origin master`首次将本地仓库推送个远程仓库
+	 
 
  
  
