@@ -91,6 +91,7 @@ Terminal：是否在打开程序的时候打开一个终端，通常使用false
 将github远程仓库克隆到本地
 
  1. 在github上建立仓库
+ 2. 使用`git clone git@github.com:account_name/repository_name.git`，将远程仓库克隆到本地
 
 	 
 
