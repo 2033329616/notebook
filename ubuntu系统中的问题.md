@@ -63,8 +63,7 @@ Terminal：是否在打开程序的时候打开一个终端，通常使用false
 4.3 文件的删除和恢复
 从仓库中删除文件
 - `rm file` 删除已经提交仓库的文件后，`git status` 可以看到文件的状态是已删除，如果想从仓库中移除该文件使用下面指令：
-`git rm file`，`git commit -m "the information about the operation"` 则仓库中将该文件移除，这个过程和添加文件流程一样，同样是1.将工作区文件添加到暂存区，2.提交给仓库
-回复要删除的文件
+`git rm file`，`git commit -m "the information about the operation"` 则仓库中将该文件移除，这个过程和添加文件流程一样，同样是1.将工作区文件添加到暂存区，2.提交给仓库要删除的文件
 
 从仓库中恢复文件
 - `git checkout -- file`，只有仓库中有该文件才可以恢复
