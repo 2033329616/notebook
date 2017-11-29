@@ -40,6 +40,9 @@ sudo apt-get install --no-install-recommends libboost-all-dev`
 再使用`source /etc/profile`更新环境变量,但只针对当前的终端,最好是注销和重启电脑,使环境变量全局生效
 **使用`$PYTHONPATH`,如果有输出则表示环境变量已经生效**
 2. 修改Makefile.config,开始编译
+该文件夹已经放在了第一节的github文档里
+`make all -j8`我的电脑处理器是4核的所以可以开8个线程,加快编译速度
+编译完成后`make runtest`测试编译的结果,显示pass则表示caffe工程构建完成
 
 
 
