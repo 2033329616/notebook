@@ -1,7 +1,19 @@
 ---
-title: ubuntu16.04+GTX1050+cuda8.0+opencv3.3+caffe
+title: ubuntu16.04下配置支持GPU的caffe环境
 tags: caffe配置,
 grammar_cjkRuby: true
 ---
 2017-11-29
 
+[TOC]
+
+#### 1.前期的准备
+硬件:
+>GPU:GTX1050,计算力6.1
+>ubuntu16.04的64为系统
+>
+软件:
+>cuda8.0
+cudnn7.0
+opencv3.3
+本文主要讲解配置好cuda和opencv后的caffe环境搭建工作
