@@ -28,6 +28,9 @@ sudo apt-get install --no-install-recommends libboost-all-dev`
 2. 安装BLAS
 `sudo apt-get install libopenblas-dev `安装开源的BLAS,这个库主要是优化cpu运算的,安装intel的mkl库也行
 
+### 3.编译caffe源码
+我们最终使用python的接口
+
 
 
 
