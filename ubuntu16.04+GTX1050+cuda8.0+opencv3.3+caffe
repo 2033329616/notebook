@@ -33,6 +33,9 @@ sudo apt-get install --no-install-recommends libboost-all-dev`
 1. 安装python接口的依赖项
 进入`caffe-master/python`文件夹,里面的`requirements.txt`文件有python的各种依赖库
 `for req in $(cat requirements.txt); do sudo pip3 install $req; done` 指令安装各依赖库,我们使用的是python3,所以用pip3安装,如果使用python2,则使用pip
+将caffe的python目录加入到系统环境变量中
+使用`sudo vim /etc/profile`打开环境变量文件,在末尾加:
+`export PYTHONPATH=/your_path/caffe/python:$PYTHONPATH`,前面的路径改为当前caffe的工作目录的路径
 
 
 
