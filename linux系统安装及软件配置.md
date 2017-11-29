@@ -26,3 +26,20 @@ grammar_cjkRuby: true
      安装完成后使用`cat /proc/driver/nvidia/version`查看驱动版本，使用`nvidia-smi`也可以查看驱动及显卡的硬件信息
  所有的驱动安装完成后，重启进入系统，如果还没有进入系统，则按上述的办法重安nvidia驱动，使用`sudo apt-get remove nvidia`和`sudo /usr/bin/nvidia-uninstall`将驱动卸载干净再重新安装。
  ### 配置sublime + python3的运行环境
+ A   新建运行环境使用Tools==>Build System==>New Build Systems生成一个配置文件，我们可以改   名字为python3.sublime-build，python3就成为了build system中的一个选项了，在该文件中写入：
+ ```bash
+{
+"shell_cmd": "python3 -u \"$file\"",
+
+"file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
+
+"selector": "source.python",
+}
+```
+保存后在build system中选择python3，使用ctrl + B就可以运行代码了
+import sys
+print(sys.version)
+print(sys.version_info)
+上面的代码可以输出使用的python版本，python2版本可以直接选择Tools==>build system中的python就行，应为在系统中默认的是python2，所以这里要构建python3的运行环境。
+B  在sublime中加入anaconda的插件，特别好使
+先安装package control，然后安装anaconda的插件，点击Preferences==>Package Settings==>Anaconda==>Settings User生成文件Anaconda.sublime-settings，里面写入下面代码：
