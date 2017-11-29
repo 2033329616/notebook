@@ -16,14 +16,18 @@ grammar_cjkRuby: true
 >cuda8.0
 cudnn7.0
 opencv3.3
+python2.7和python3.5系统已经预装好了
 本文主要讲解配置好cuda和opencv后的caffe环境搭建工作,cuda和opencv的配置请参考[我的github文档][1]
 
 ### 2.安装caffe所需的依赖项
 参考[caffe官网][2]
-安装下面的依赖项:
+1. 安装下面的依赖项:
 `sudo apt-get install libprotobuf-dev libleveldb-dev libsnappy-dev libopencv-dev libhdf5-serial-dev protobuf-compiler
 sudo apt-get install --no-install-recommends libboost-all-dev`
 其中`libopencv-dev`依赖项不用安装,应为前面已经配置好了opencv3.3,如果没有安装的话,就要安装该依赖项
+2. 安装BLAS
+`sudo apt-get install libopenblas-dev `安装开源的BLAS,这个库主要是优化cpu运算的,安装intel的mkl库也行
+
 
 
 
