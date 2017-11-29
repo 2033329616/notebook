@@ -25,3 +25,4 @@ grammar_cjkRuby: true
       b 安装nvidia的deb文件即可
      安装完成后使用`cat /proc/driver/nvidia/version`查看驱动版本，使用`nvidia-smi`也可以查看驱动及显卡的硬件信息
  所有的驱动安装完成后，重启进入系统，如果还没有进入系统，则按上述的办法重安nvidia驱动，使用`sudo apt-get remove nvidia`和`sudo /usr/bin/nvidia-uninstall`将驱动卸载干净再重新安装。
+ ### 配置sublime + python3的运行环境
