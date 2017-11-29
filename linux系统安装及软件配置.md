@@ -64,16 +64,18 @@ B  在sublime中加入anaconda的插件，特别好使
 配置后，函数可以补全，可以查看定义等
 
 4sublime无法输入中文
-sudo apt-get update && sudo apt-get upgrade  克隆项目到本地 
+`sudo apt-get update && sudo apt-get upgrade`  克隆项目到本地 
 
-git clone https://github.com/lyfeyaj/sublime-text-imfix.git   运行脚本 
-cd sublime-text-imfix && ./sublime-imfix
+`git clone https://github.com/lyfeyaj/sublime-text-imfix.git `  运行脚本 
+`cd sublime-text-imfix && ./sublime-imfix`
  
 最后重启即可
 如果上述方法不可行，则：
  1将sublime-test-imfix/lib路径下的libsublime-imfix.so拷贝到sublime的文件夹下
  2 将sublime-test-imfix/src路径下的subl文件拷贝到/usr/bin/路径下并作修改如下：
+ ```
 #!/bin/sh
 export LD_PRELOAD=/you_install_path/sublime_text/libsublime-imfix.so
 exec /you_install_path/sublime_text/sublime_text "$@"
+```
 使用subl就可以打开sublime并输入中文了
