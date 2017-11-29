@@ -36,10 +36,12 @@ grammar_cjkRuby: true
 "selector": "source.python",
 }
 ```
-保存后在build system中选择python3，使用ctrl + B就可以运行代码了
+保存后在build system中选择python3，使用`ctrl + B就`可以运行代码了
+```
 import sys
 print(sys.version)
 print(sys.version_info)
+```
 上面的代码可以输出使用的python版本，python2版本可以直接选择Tools==>build system中的python就行，应为在系统中默认的是python2，所以这里要构建python3的运行环境。
 B  在sublime中加入anaconda的插件，特别好使
 先安装package control，然后安装anaconda的插件，点击Preferences==>Package Settings==>Anaconda==>Settings User生成文件Anaconda.sublime-settings，里面写入下面代码：
