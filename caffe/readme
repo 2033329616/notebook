@@ -1,5 +1,6 @@
 在ubuntu16.04下配置caffe工作的总结
-分为三个文件:
+分为四个文件:
 1 总结ubuntu配置cuda
 2 ubuntu下配置opencv3.3
 3 caffe环境的搭建
+4 编译配置文件
