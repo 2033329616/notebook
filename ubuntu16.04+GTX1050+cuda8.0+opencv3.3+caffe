@@ -7,7 +7,7 @@ grammar_cjkRuby: true
 
 [TOC]
 
-#### 1.前期的准备
+### 1.前期的准备
 硬件:
 >GPU:GTX1050,计算力6.1
 >ubuntu16.04的64为系统
@@ -18,6 +18,15 @@ cudnn7.0
 opencv3.3
 本文主要讲解配置好cuda和opencv后的caffe环境搭建工作,cuda和opencv的配置请参考[我的github文档][1]
 
+### 2.安装caffe所需的依赖项
+参考[caffe官网][2]
+安装下面的依赖项:
+
+
+
+
+
 
 
   [1]: https://github.com/2033329616/notebook/tree/master/caffe
+  [2]: http://caffe.berkeleyvision.org/
