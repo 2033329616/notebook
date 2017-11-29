@@ -36,7 +36,7 @@ sudo apt-get install --no-install-recommends libboost-all-dev`
 将caffe的python目录加入到系统环境变量中
 使用`sudo vim /etc/profile`打开环境变量文件,在末尾加:
 `export PYTHONPATH=/your_path/caffe/python:$PYTHONPATH`,前面的路径改为当前caffe的工作目录的路径
-再使用`source /etc/profile`更新环境变量
+再使用`source /etc/profile`更新环境变量,但只针对当前的终端,最好是注销和重启电脑,使环境变量全局生效
 
 
 
