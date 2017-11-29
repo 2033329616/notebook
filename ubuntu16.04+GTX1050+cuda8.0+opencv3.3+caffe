@@ -30,6 +30,10 @@ sudo apt-get install --no-install-recommends libboost-all-dev`
 
 ### 3.编译caffe源码
 我们最终使用python的接口
+1. 安装python接口的依赖项
+进入`caffe-master/python`文件夹,里面的`requirements.txt`文件有python的各种依赖库
+`for req in $(cat requirements.txt); do sudo pip3 install $req; done` 指令安装各依赖库,我们使用的是python3,所以用pip3安装,如果使用python2,则使用pip
+
 
 
 
