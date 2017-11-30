@@ -43,6 +43,7 @@ sudo apt-get install --no-install-recommends libboost-all-dev`
 该文件夹已经放在了第一节的github文档里
 `make all -j8`我的电脑处理器是4核的所以可以开8个线程,加快编译速度
 编译完成后`make runtest`测试编译的结果,显示pass则表示caffe工程构建完成
+如果使用python接口,还要`make pycaffe`,才能`import caffe`成功
 
 
 
