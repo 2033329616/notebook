@@ -12,5 +12,10 @@ grammar_cjkRuby: true
 浏览器中运行： [http://localhost:1234/][1]就可以打开python及集成的其他库的api了 .
 这里主要使用的就是python自带的pydoc文档生成工具，pydoc具体使用可以参看python文档：https://docs.python.org/2/library/pydoc.html
 
+### 2. pyaudio语音处理模块的安装
+安装` sudo apt-get install libjack-jackd2-dev portaudio19-dev`
+再运行`sudo python3 -m pip install pyaudio`
 
   [1]: http://localhost:1234/
+  
+ 
