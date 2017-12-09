@@ -20,6 +20,8 @@ grammar_cjkRuby: true
 `sudo apt-get install ffmpeg`安装,
 使用`ffmpeg -i 16k.wav 123.wav转换格式`
 
+### 4.百度语音模块的安装
+
   [1]: http://localhost:1234/
   
  
