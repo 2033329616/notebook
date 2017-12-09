@@ -16,6 +16,8 @@ grammar_cjkRuby: true
 安装` sudo apt-get install libjack-jackd2-dev portaudio19-dev`
 再运行`sudo python3 -m pip install pyaudio`
 
+`mediainfo 1234.wav `可以查看音频文件的格式信息
+
 ### 3. ffmpeg音频格式转换
 `sudo apt-get install ffmpeg`安装,
 使用`ffmpeg -i 16k.wav 123.wav转换格式`
