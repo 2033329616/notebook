@@ -20,7 +20,10 @@ grammar_cjkRuby: true
 `sudo apt-get install ffmpeg`安装,
 使用`ffmpeg -i 16k.wav 123.wav转换格式`
 
-### 4.百度语音模块的安装
+### 4.百度语音模块SDK的安装
+
+如果已安装pip，执行`pip install baidu-aip`即可。
+如果已安装setuptools，执行`python setup.py install`即可。
 
   [1]: http://localhost:1234/
   
