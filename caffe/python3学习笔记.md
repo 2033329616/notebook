@@ -24,6 +24,8 @@ grammar_cjkRuby: true
 
 如果已安装pip，执行`pip install baidu-aip`即可。
 如果已安装setuptools，执行`python setup.py install`即可。
+如果使用python3,需要使用`pip3 install baidu-aip`
+
 
   [1]: http://localhost:1234/
   
