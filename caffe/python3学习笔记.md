@@ -16,6 +16,10 @@ grammar_cjkRuby: true
 安装` sudo apt-get install libjack-jackd2-dev portaudio19-dev`
 再运行`sudo python3 -m pip install pyaudio`
 
+### 3. ffmpeg
+`sudo apt-get install ffmpeg`安装,
+使用`ffmpeg -i 16k.wav 123.wav转换格式`
+
   [1]: http://localhost:1234/
   
  
