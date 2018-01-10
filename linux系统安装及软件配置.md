@@ -79,3 +79,9 @@ export LD_PRELOAD=/you_install_path/sublime_text/libsublime-imfix.so
 exec /you_install_path/sublime_text/sublime_text "$@"
 ```
 使用subl就可以打开sublime并输入中文了
+
+### 3 caffe绘制网络模型
+[caffe网络模型][1]
+
+
+  [1]: http://blog.csdn.net/u013989576/article/details/61618454
