@@ -85,11 +85,9 @@ exec /you_install_path/sublime_text/sublime_text "$@"
 python/draw_net.py, 这个文件，就是用来绘制网络模型的。也就是将网络模型由prototxt变成一张图片。
 
 1. 安装graphviz :   `sudo apt-get install graphviz`
-
 2. 安装pydot :  `sudo pip3 install pydot`
 3. 安装protobuf: `sudo pip3 install protobuf`
-
-4.执行draw_net.py文件，带有三个参数：网络模型的prototxt文件，保存图片的路径及名字，--rankdir=x，x有四种选择，分别是LR, RL， TB， BT，用来表示网络的方向，分别是从左到右，从右到左，从上到下，从下到上，默认是LR。
+4. 执行draw_net.py文件，带有三个参数：网络模型的prototxt文件，保存图片的路径及名字，--rankdir=x，x有四种选择，分别是LR, RL， TB， BT，用来表示网络的方向，分别是从左到右，从右到左，从上到下，从下到上，默认是LR。
 
 
 
