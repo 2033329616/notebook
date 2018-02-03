@@ -30,5 +30,26 @@ private:            //私有函数及成员定义的关键词
 ```
 `hello.cpp`文件如下：
 ```cpp
+#include "hello.h"
 
+//类的定义与实现
+Hello::Hello()      //构造函数定义
+{
+	content = "这是私有成员变量";      //在构造函数中为成员变量赋值
+	cout << "这是构造函数" << endl;
+
+}
+
+Hello::~Hello()       //析构函数定义
+{
+	cout << "这是析构函数" << endl;
+}
+
+
+void Hello::talk(int number)    //成员函数定义
+{
+	num = number;
+	cout <<"content:"<< content << endl;  //头文件中包含了string才能使用该句
+	cout << "num:" << num << endl;
+}
 ```
