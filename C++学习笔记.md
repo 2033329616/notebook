@@ -67,4 +67,12 @@ int main()
 ![运行结果][1]
 
 
+### **2. C++中的L和_T的作用**
+在一个字符串前加 `L`表示将ANSI字符串转换为unicode的字符串，每个字符占两个字节
+```cpp
+strlen("abc") = 3;
+strlen(L"asd") = 6;
+```
+
+
   [1]: ./images/result.jpg ""
