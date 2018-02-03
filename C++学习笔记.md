@@ -54,5 +54,20 @@ void Hello::talk(int number)    //成员函数定义
 ```
 主函数main.cpp如下：
 ```cpp
+#include "iostream"
+#include "hello.h"
 
+using namespace std;
+
+void say(int a = 0)
+{
+	cout << a << endl;
+}
+
+int main()
+{
+	Hello robot;      //实例化一个对象
+	robot.talk(233);  //调用成员函数，默认参数为0
+	return 0;
+}
 ```
