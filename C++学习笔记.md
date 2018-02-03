@@ -59,11 +59,6 @@ void Hello::talk(int number)    //成员函数定义
 
 using namespace std;
 
-void say(int a = 0)
-{
-	cout << a << endl;
-}
-
 int main()
 {
 	Hello robot;      //实例化一个对象
