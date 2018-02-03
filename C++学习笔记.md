@@ -10,7 +10,7 @@ grammar_cjkRuby: true
 `.h`头文件只需预处理，`.cpp`才需要编译，一般在头文件里声明一个类及类的的方法，在源文件里实现函数的**定义**与**实现**，这样可以将声明和定义分开，利于构建大规模的程序。
 `hello.h`文件如下：
 ```cpp
-#pragma once       //预编译一次，防止多次出现包含头文件的情况
+#pragma once       //预编译一次，防止出现重复包含头文件的情况
 
 #include "iostream"
 #include "string"
