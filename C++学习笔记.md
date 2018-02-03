@@ -11,7 +11,6 @@ grammar_cjkRuby: true
 `hello.h`文件如下：
 ```cpp
 #pragma once       //预编译一次，防止出现重复包含头文件的情况
-
 #include "iostream"
 #include "string"
 using namespace std;
