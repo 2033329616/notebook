@@ -38,12 +38,10 @@ Hello::Hello()      //构造函数定义
 	cout << "这是构造函数" << endl;
 
 }
-
 Hello::~Hello()       //析构函数定义
 {
 	cout << "这是析构函数" << endl;
 }
-
 void Hello::talk(int number)    //成员函数定义
 {
 	num = number;
@@ -55,7 +53,6 @@ void Hello::talk(int number)    //成员函数定义
 ```cpp
 #include "iostream"
 #include "hello.h"
-
 using namespace std;
 
 int main()
