@@ -45,11 +45,14 @@ Hello::~Hello()       //析构函数定义
 	cout << "这是析构函数" << endl;
 }
 
-
 void Hello::talk(int number)    //成员函数定义
 {
 	num = number;
 	cout <<"content:"<< content << endl;  //头文件中包含了string才能使用该句
 	cout << "num:" << num << endl;
 }
+```
+主函数main.cpp如下：
+```cpp
+
 ```
