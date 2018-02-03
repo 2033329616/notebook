@@ -28,3 +28,7 @@ private:            //私有函数及成员定义的关键词
 	int num;
 };
 ```
+`hello.cpp`文件如下：
+```cpp
+
+```
