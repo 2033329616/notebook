@@ -18,9 +18,9 @@ using namespace std;
 
 class Hello
 {
-public:             //共有函数及成员定义的关键词
-	Hello();        //声明构造函数，构造函数最好不要有默认参数
-	~Hello();       //声明析构函数
+public:                   //共有函数及成员定义的关键词
+	Hello();             //声明构造函数，构造函数最好不要有默认参数
+	~Hello();            //声明析构函数
 	void talk(int number=0);    //声明共有成员函数,参数给出默认值  
 
 private:            //私有函数及成员定义的关键词
