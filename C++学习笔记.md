@@ -62,3 +62,9 @@ int main()
 	return 0;
 }
 ```
+运行结果如下：
+
+![运行结果][1]
+
+
+  [1]: ./images/result.jpg ""
