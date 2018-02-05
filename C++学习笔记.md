@@ -99,7 +99,7 @@ using namespace std;
 int main()
 {
 	Py_Initialize();
-	//PyRun_SimpleString("x=eval('2 + 3*2')");   //运行单个python语句
+	//PyRun_SimpleString("x=eval('2 + 3*2')");    //运行单个python语句
 	//PyRun_SimpleString("print(x)");
 	//PyArg_Parse(x, "i");
 
