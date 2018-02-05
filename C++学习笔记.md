@@ -134,7 +134,7 @@ int main()
 	PyObject *pModule = NULL;       //接收python模块
 	PyObject *pFunc = NULL;         //接收pyhton函数
 	PyObject *pResult = NULL;       //接收python函数的返回结果
-	double result = 0;              //C++中接收计算结果的变量
+	double result = 0;              //C++中接收最终计算结果的变量
 
 	pModule = PyImport_ImportModule("strToNum");
 	if (!pModule) // 加载模块失败
