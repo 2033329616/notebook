@@ -94,8 +94,6 @@ strlen(L"asd") = 6;
  
  
  
- 
- 
 
   [1]: ./images/result.jpg ""
 
