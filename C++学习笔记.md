@@ -104,7 +104,7 @@ int main()
 	//PyArg_Parse(x, "i");
 
 	// 将Python工作路径切换到待调用模块所在目录，一定要保证路径名的正确性
-	string path = ".\\strToNum";                   //相对路径，windows下
+	string path = ".\\strToNum";                  //相对路径，windows下
 	string chdir_cmd = string("sys.path.append(\"") + path + "\")";
 	const char* cstr_cmd = chdir_cmd.c_str();
 	PyRun_SimpleString("import sys");
