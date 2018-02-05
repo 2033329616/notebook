@@ -156,7 +156,7 @@ int main()
 	PyTuple_SetItem(pArgs, 0, Py_BuildValue("s", "1 + 2*4.3 -1"));
 	//PyObject *pArgs = Py_BuildValue("23");
 	pResult = PyEval_CallObject(pFunc, pArgs);  //调用python函数
-	PyArg_Parse(pResult, "d", &result);         //转换为double
+	PyArg_Parse(pResult, "d", &result);         //python函数的返回结果转换为double
 	cout << "result:" << result << endl;
 
 	Py_Finalize();      //释放资源
