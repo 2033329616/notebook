@@ -128,13 +128,13 @@ int main()
 	PyRun_SimpleString("import sys");
 	PyRun_SimpleString(cstr_cmd);
 	PyRun_SimpleString("import os");
-	PyRun_SimpleString("print(os.getcwd())");  //获取当前路径
+	PyRun_SimpleString("print(os.getcwd())");    //获取当前路径
 	PyRun_SimpleString("print(sys.path)");
 	
-	PyObject *pModule = NULL;
-	PyObject *pFunc = NULL;
-	PyObject *pResult = NULL;
-	double result = 0;
+	PyObject *pModule = NULL;       //接收python模块
+	PyObject *pFunc = NULL;         //接收pyhton函数
+	PyObject *pResult = NULL;       //接收python函数的返回结果
+	double result = 0;              //C++中接收计算结果的变量
 
 	pModule = PyImport_ImportModule("strToNum");
 	if (!pModule) // 加载模块失败
