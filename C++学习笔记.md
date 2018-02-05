@@ -77,13 +77,8 @@ strlen(L"asd") = 6;
  
  ### **3.C++调用Python函数的方法**
  这里使用vs2015编译程序，首先要设置项目的属性，把python的include目录和libs目录包含到项目中，设置如下：
-
-
-
  
- 
- 
- 
+ ![项目的属性设置][2]
  
  
  
@@ -97,3 +92,4 @@ strlen(L"asd") = 6;
 
   [1]: ./images/result.jpg ""
 
+  [2]: ./images/c++%E8%B0%83%E7%94%A8python_3.jpg ""
