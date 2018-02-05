@@ -152,7 +152,7 @@ int main()
 	}
 	cout << "[INFO] Get function (convertStrToNum) succeed." << endl;
 
-	PyObject *pArgs = PyTuple_New(1);               //新建数组保存参数
+	PyObject *pArgs = PyTuple_New(1);         //新建数组保存参数
 	PyTuple_SetItem(pArgs, 0, Py_BuildValue("s", "1 + 2*4.3 -1"));
 	//PyObject *pArgs = Py_BuildValue("23");
 	pResult = PyEval_CallObject(pFunc, pArgs);
