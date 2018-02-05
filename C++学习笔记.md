@@ -104,8 +104,6 @@ int main()
 	PyRun_SimpleString("import os");
 	PyRun_SimpleString("print(os.getcwd())");
 	PyRun_SimpleString("print(sys.path)");
-
-
 	
 	PyObject *pModule = NULL;
 	PyObject *pFunc = NULL;
