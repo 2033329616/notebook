@@ -80,7 +80,65 @@ strlen(L"asd") = 6;
  
  ![项目的属性设置][2]
  
- 
+ c++程序如下
+ ```cpp
+ #include "iostream"
+#include "Python.h"
+#include "string"
+#include "cstring"
+using namespace std;
+
+int main()
+{
+	Py_Initialize();
+	//PyRun_SimpleString("x=eval('2 + 3*2')");
+	//PyRun_SimpleString("print(x)");
+	//PyArg_Parse(x, "i");
+
+	// 将Python工作路径切换到待调用模块所在目录，一定要保证路径名的正确性
+	string path = ".\\strToNum";                   //相对路径，windows下
+	string chdir_cmd = string("sys.path.append(\"") + path + "\")";
+	const char* cstr_cmd = chdir_cmd.c_str();
+	PyRun_SimpleString("import sys");
+	PyRun_SimpleString(cstr_cmd);
+	PyRun_SimpleString("import os");
+	PyRun_SimpleString("print(os.getcwd())");
+	PyRun_SimpleString("print(sys.path)");
+
+
+	
+	PyObject *pModule = NULL;
+	PyObject *pFunc = NULL;
+	PyObject *pResult = NULL;
+	double result = 0;
+
+	pModule = PyImport_ImportModule("strToNum");
+	if (!pModule) // 加载模块失败
+	{
+		cout << "[ERROR] Python get module failed." << endl;
+		return 0;
+	}
+	cout << "[INFO] Python get module succeed." << endl;
+
+	pFunc = PyObject_GetAttrString(pModule, "convertStrToNum");
+	if (!pFunc || !PyCallable_Check(pFunc))  // 验证是否加载成功
+	{
+		cout << "[ERROR] Can't find funftion (test_add)" << endl;
+		return 0;
+	}
+	cout << "[INFO] Get function (test_add) succeed." << endl;
+
+	PyObject *pArgs = PyTuple_New(1);               //新建数组保存参数
+	PyTuple_SetItem(pArgs, 0, Py_BuildValue("s", "1 + 2*4.3 -1"));
+	//PyObject *pArgs = Py_BuildValue("23");
+	pResult = PyEval_CallObject(pFunc, pArgs);
+	PyArg_Parse(pResult, "d", &result);  //转换为double
+	cout << "result:" << result << endl;
+
+	Py_Finalize();      //释放资源
+	return 0;
+}
+ ```
  
  
  
