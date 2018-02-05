@@ -88,6 +88,8 @@ def convertStrToNum(string):
  ```
  这里的python程序当做模块来对待，文件夹名称为strToNum，文件名strToNum.py，在同一个文件夹下有__init__.py文件(内容可为空)来表示模块。
  
+ 在C++程序中调用python函数时注意：python语句写成模块的形式；
+ 
  c++程序如下
  ```cpp
  #include "iostream"
