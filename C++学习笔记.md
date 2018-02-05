@@ -164,9 +164,9 @@ int main()
 	return 0;
 }
  ```
- [C++调用python返回值][2]
- [调用python的类函数][3]
- 
+ [C++调用python返回值][3]
+ [调用python的类函数][4]
+ [使用与pyhton的C++扩展][5]
  
  
  
@@ -185,4 +185,6 @@ int main()
 
   [1]: http://blog.csdn.net/itbuluoge/article/details/13005369
   [2]: http://blog.csdn.net/itbuluoge/article/details/13005369
-  [3]: http://blog.csdn.net/nynyvkhhiiii/article/details/17525865
+  [3]: http://blog.csdn.net/itbuluoge/article/details/13005369
+  [4]: http://blog.csdn.net/nynyvkhhiiii/article/details/17525865
+  [5]: https://docs.microsoft.com/zh-cn/visualstudio/python/working-with-c-cpp-python-in-visual-studio
