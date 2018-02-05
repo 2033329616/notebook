@@ -150,6 +150,7 @@ int main()
 		cout << "[ERROR] Can't find funftion (convertStrToNum)" << endl;
 		return 0;
 	}
+	
 	cout << "[INFO] Get function (convertStrToNum) succeed." << endl;
 
 	PyObject *pArgs = PyTuple_New(1);         //新建数组保存传入python函数的参数
