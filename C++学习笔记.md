@@ -100,6 +100,10 @@ def convertStrToNum(string):
    - 定义C++数据变量，转换python返回的参数为`C++`的数据类型，并用该变量接收
 
 
+
+3.`Py_Finalize()`释放资源
+
+
  
  
  c++程序如下
