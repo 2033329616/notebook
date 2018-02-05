@@ -86,7 +86,7 @@ def convertStrToNum(string):
 	result = eval(string)
 	return result
  ```
- 
+ 这里的python程序当做模块来对待，文件夹名称为strToNum，文件名strToNum.py，在同一个文件夹下有__init__.py文件来表示模块。
  
  c++程序如下
  ```cpp
