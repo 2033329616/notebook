@@ -79,6 +79,14 @@ strlen(L"asd") = 6;
  这里使用vs2015编译程序，首先要设置项目的属性，把python的include目录和libs目录包含到项目中，设置如下：
  
  ![项目的属性设置][2]
+ python程序如下：
+ ```python
+ # python
+def convertStrToNum(string):
+	result = eval(string)
+	return result
+ ```
+ 
  
  c++程序如下
  ```cpp
