@@ -152,11 +152,11 @@ int main()
 	}
 	cout << "[INFO] Get function (convertStrToNum) succeed." << endl;
 
-	PyObject *pArgs = PyTuple_New(1);         //新建数组保存参数
+	PyObject *pArgs = PyTuple_New(1);         //新建数组保存传入python函数的参数
 	PyTuple_SetItem(pArgs, 0, Py_BuildValue("s", "1 + 2*4.3 -1"));
 	//PyObject *pArgs = Py_BuildValue("23");
-	pResult = PyEval_CallObject(pFunc, pArgs);
-	PyArg_Parse(pResult, "d", &result);  //转换为double
+	pResult = PyEval_CallObject(pFunc, pArgs);  //调用python函数
+	PyArg_Parse(pResult, "d", &result);         //转换为double
 	cout << "result:" << result << endl;
 
 	Py_Finalize();      //释放资源
