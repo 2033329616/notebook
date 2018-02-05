@@ -147,10 +147,10 @@ int main()
 	pFunc = PyObject_GetAttrString(pModule, "convertStrToNum");
 	if (!pFunc || !PyCallable_Check(pFunc))  // 验证是否加载成功
 	{
-		cout << "[ERROR] Can't find funftion (test_add)" << endl;
+		cout << "[ERROR] Can't find funftion (convertStrToNum)" << endl;
 		return 0;
 	}
-	cout << "[INFO] Get function (test_add) succeed." << endl;
+	cout << "[INFO] Get function (convertStrToNum) succeed." << endl;
 
 	PyObject *pArgs = PyTuple_New(1);               //新建数组保存参数
 	PyTuple_SetItem(pArgs, 0, Py_BuildValue("s", "1 + 2*4.3 -1"));
