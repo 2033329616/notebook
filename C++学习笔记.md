@@ -128,7 +128,7 @@ int main()
 	PyRun_SimpleString("import sys");
 	PyRun_SimpleString(cstr_cmd);
 	PyRun_SimpleString("import os");
-	PyRun_SimpleString("print(os.getcwd())");
+	PyRun_SimpleString("print(os.getcwd())");  //获取当前路径
 	PyRun_SimpleString("print(sys.path)");
 	
 	PyObject *pModule = NULL;
