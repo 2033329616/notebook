@@ -98,7 +98,7 @@ Git支持多种协议，包括https，但通过ssh支持的原生git协议速度
  
  
  
-### **4.使用apt-file来查看安装的文件**
+### **5.使用apt-file来查看安装的文件**
 `sudo apt-get install apt-file` 安装该软件
 安装完以后系统会提示你update，如果没有提示，在终端输入如下命令：
 `sudo apt-file update` 更新apt-file
