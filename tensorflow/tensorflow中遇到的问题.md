@@ -18,3 +18,9 @@ Loaded runtime CuDNN library: 7003 (compatibility version 7000) but source was c
 `sudo cp cuda/include/cudnn.h /usr/local/cuda/include`
 `sudo cp cuda/lib64/libcudnn* /usr/local/cuda/lib64`
 `sudo chmod a+r /usr/local/cuda/include/cudnn.h /usr/local/cuda/lib64/libcudnn*`
+
+### **2.CUDA driver version is insufficient for CUDA runtime version**
+
+这是通过GUI安装nvidia驱动后出现的问题,cuda-8.0已经安装过了.
+`sudo apt-get purge nvidia-*`卸载旧的nvidia驱动
+`sudo apt-get install nvidia-375`安装新的驱动,则使用cuda的设备检测通过
