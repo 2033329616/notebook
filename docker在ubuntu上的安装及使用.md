@@ -37,10 +37,16 @@ dockerde相关文件都在`/var/lib/docker/`路径下
 `apt-cache madison docker-ce`查看目前的多个版本,结果如下:
 
 ![目前docker-ce的版本][1]
-使用`sudo apt-get install docker-ce=<VERSION>`安装特定的版本,这里使用17.12.0版本,指令为:`sudo apt-get install docker-ce=17.12.0~ce-0~ubuntu`
+ 使用`sudo apt-get install docker-ce=<VERSION>`安装特定的版本,这里使用17.12.0版本,指令为:`sudo apt-get install docker-ce=17.12.0~ce-0~ubuntu`
 
-- 其他详细的安装详情见官网 [https://docs.docker.com/install/linux/docker-ce/ubuntu/#install-docker-ce-1][2]
+3. 验证安装的结果
+如果安装docker安装正确,则运行`sudo docker run hello-world`后输出下面结果:
+
+![docker安装成功][2]
+
+- 其他详细的安装详情见官网 [https://docs.docker.com/install/linux/docker-ce/ubuntu/#install-docker-ce-1][3]
 
 
   [1]: ./images/Screenshot%20from%202018-03-30%2020-41-23.png "目前docker-ce的版本"
-  [2]: https://docs.docker.com/install/linux/docker-ce/ubuntu/#install-docker-ce-1
+  [2]: ./images/Screenshot%20from%202018-03-30%2020-57-04.png "docker安装成功"
+  [3]: https://docs.docker.com/install/linux/docker-ce/ubuntu/#install-docker-ce-1
