@@ -61,8 +61,11 @@ dockerde相关文件都在`/var/lib/docker/`路径下
 ![enter description here][5]
 
 #### **5.安装nvidia-docker来支持GPU**
-
-
+1. 卸载旧版本的nvidia-docker及GPU容器
+`docker volume ls -q -f driver=nvidia-docker |  \`
+`xargs -r -I{} -n1 docker ps -q -a -f volume={} | \` 
+`xargs -r docker rm -f`
+`sudo apt-get purge -y nvidia-docker`
 
 
 
