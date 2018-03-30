@@ -37,7 +37,7 @@ dockerde相关文件都在`/var/lib/docker/`路径下
 `apt-cache madison docker-ce`查看目前的多个版本,结果如下:
 
 ![目前docker-ce的版本][1]
-使用`sudo apt-get install docker-ce=<VERSION>`安装特定的版本,这里使用17.12.0版本,指令为:`sudo apt-get install docker-ce=17.12.0~ce-0~ubuntu`
+使用`sudo apt-get install docker-ce=<VERSION>`安装特定的版本,这里使用17.12.0版本,指令为:`sudo apt-get install docker-ce=17.12.0~ce-0~ubuntu`.
 
 
   [1]: ./images/Screenshot%20from%202018-03-30%2020-41-23.png "目前docker-ce的版本"
