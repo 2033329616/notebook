@@ -50,3 +50,5 @@ dockerde相关文件都在`/var/lib/docker/`路径下
   [1]: ./images/Screenshot%20from%202018-03-30%2020-41-23.png "目前docker-ce的版本"
   [2]: ./images/Screenshot%20from%202018-03-30%2020-57-04.png "docker安装成功"
   [3]: https://docs.docker.com/install/linux/docker-ce/ubuntu/#install-docker-ce-1
+  
+  
