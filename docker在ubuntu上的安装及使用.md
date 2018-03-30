@@ -12,7 +12,7 @@ grammar_cjkRuby: true
 dockerde相关文件都在`/var/lib/docker/`路径下
 
 #### **2.使用docker仓库安装**
-> 首次安装docker时需要添加docker的仓库
+> **首次安装docker时需要添加docker的仓库**
 
  1. 更新软件源的仓库信息
  `sudo apt-get update`
@@ -28,7 +28,7 @@ dockerde相关文件都在`/var/lib/docker/`路径下
 `sudo add-apt-repository \`
   ` "deb [arch=amd64] https://download.docker.com/linux/ubuntu \`
   ` $(lsb_release -cs) stable"`
-> 安装**docker ce**
+> **安装docker-ce**
 
 1. 再次更新仓库信息
 `sudo apt-get update`
