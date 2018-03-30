@@ -51,7 +51,7 @@ dockerde相关文件都在`/var/lib/docker/`路径下
 > 该操作的作用:不用每次使用docker指令时都输入sudo
 1. 创建docker组
 `sudo groupadd docker`创建docker组
-`cat /etc/group | grep -i docker`查看docker组的基本情况如下:
+`cat /etc/group | grep -i docker`查看docker组的基本情况如下,目前该组中还没有添加用户:
 
 ![enter description here][4]
 
