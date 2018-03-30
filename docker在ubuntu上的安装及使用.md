@@ -60,7 +60,7 @@ dockerde相关文件都在`/var/lib/docker/`路径下
 
 ![enter description here][5]
 
-
+#### **5.安装**
 
 
 
