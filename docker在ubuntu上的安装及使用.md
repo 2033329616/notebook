@@ -75,9 +75,10 @@ dockerde相关文件都在`/var/lib/docker/`路径下
  添加仓库:
  `curl -s -L https://nvidia.github.io/nvidia-docker/$distribution/nvidia-docker.list | \`
   `sudo tee /etc/apt/sources.list.d/nvidia-docker.list` 
- 3.更新仓库信息
+ 3. 更新仓库信息
  `sudo apt-get update`
-  
+ 4. 安装nvidia-docker2并重载docker dameon的配置
+ ``
 
 
 
