@@ -57,6 +57,7 @@ dockerde相关文件都在`/var/lib/docker/`路径下
 2.为docker组添加用户
 `sudo usermod -aG docker $USER`,其中`$USER`表示当前的用户,再次查看docker用户组的信息如下,该组中多了个david用户(当前登录的用户):
 3. 注销登录后,用户组生效,就可以直接使用不带sudo的docker指令
+
 ![enter description here][5]
 
 
