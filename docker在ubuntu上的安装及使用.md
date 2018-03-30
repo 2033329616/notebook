@@ -22,5 +22,22 @@ dockerde相关文件都在`/var/lib/docker/`路径下
  3. 添加docker的官方GPG
 `curl -fsSL https://download.docker.com/linux/ubuntu/gpg \`
 `| sudo apt-key add -`
+4. 验证是否添加成功带有fingerprint的key
+`sudo apt-key fingerprint 0EBFCD88`
+5. 添加稳定的docker仓库
+`sudo add-apt-repository \`
+  ` "deb [arch=amd64] https://download.docker.com/linux/ubuntu \`
+  ` $(lsb_release -cs) stable"`
+> 安装**docker ce**
 
-. 
+1. 再次更新仓库信息
+`sudo apt-get update`
+2. 指令安装docker
+注意:`sudo apt-get install docker-ce`只能安装目前最高的版本,但通常使用下面方法来选择要安装的版本
+`apt-cache madison docker-ce`查看目前的多个版本,结果如下:
+
+![目前docker-ce的版本][1]
+使用`sudo apt-get install docker-ce=<VERSION>`安装特定的版本,这里使用17.12.0版本,指令为:`sudo apt-get install docker-ce=17.12.0~ce-0~ubuntu`
+
+
+  [1]: ./images/Screenshot%20from%202018-03-30%2020-41-23.png "目前docker-ce的版本"
