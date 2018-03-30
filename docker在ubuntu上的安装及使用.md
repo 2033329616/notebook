@@ -54,10 +54,10 @@ dockerde相关文件都在`/var/lib/docker/`路径下
 `cat /etc/group | grep -i docker`查看docker组的基本情况如下,目前该组中还没有添加用户:
 
 ![enter description here][4]
-
 2.为docker组添加用户
-`sudo usermod -aG docker $USER`,`$USER`表示当前的用户
+`sudo usermod -aG docker $USER`,其中`$USER`表示当前的用户,再次查看docker用户组的信息如下:
 
+![enter description here][5]
 
 
 
@@ -85,3 +85,4 @@ dockerde相关文件都在`/var/lib/docker/`路径下
   [2]: ./images/Screenshot%20from%202018-03-30%2020-57-04.png "docker安装成功"
   [3]: https://docs.docker.com/install/linux/docker-ce/ubuntu/#install-docker-ce-1
   [4]: ./images/Screenshot%20from%202018-03-30%2021-31-44.png "docker组的信息"
+  [5]: ./images/Screenshot%20from%202018-03-30%2021-34-55.png "david用户添入docker用户组"
