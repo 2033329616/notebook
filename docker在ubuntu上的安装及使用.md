@@ -39,7 +39,7 @@ dockerde相关文件都在`/var/lib/docker/`路径下
 ![目前docker-ce的版本][1]
 使用`sudo apt-get install docker-ce=<VERSION>`安装特定的版本,这里使用17.12.0版本,指令为:`sudo apt-get install docker-ce=17.12.0~ce-0~ubuntu`
 
-其他详细的安装详情见官网 https://docs.docker.com/install/linux/docker-ce/ubuntu/#install-docker-ce-1][2]
+其他详细的安装详情见官网 [https://docs.docker.com/install/linux/docker-ce/ubuntu/#install-docker-ce-1][2]
 
 
   [1]: ./images/Screenshot%20from%202018-03-30%2020-41-23.png "目前docker-ce的版本"
