@@ -51,6 +51,10 @@ dockerde相关文件都在`/var/lib/docker/`路径下
 > 该操作的作用:不用每次使用docker指令时都输入sudo
 1. 创建docker组
 `sudo groupadd docker`创建docker组
+`cat /etc/group | grep -i docker`查看docker组的基本情况如下:
+
+![enter description here][4]
+
 2.为docker组添加用户
 `sudo usermod -aG docker $USER`,`$USER`表示当前的用户
 
@@ -74,8 +78,10 @@ dockerde相关文件都在`/var/lib/docker/`路径下
 
 
 
+  
+
+
   [1]: ./images/Screenshot%20from%202018-03-30%2020-41-23.png "目前docker-ce的版本"
   [2]: ./images/Screenshot%20from%202018-03-30%2020-57-04.png "docker安装成功"
   [3]: https://docs.docker.com/install/linux/docker-ce/ubuntu/#install-docker-ce-1
-  
-  
+  [4]: ./images/Screenshot%20from%202018-03-30%2021-31-44.png "docker组的信息"
