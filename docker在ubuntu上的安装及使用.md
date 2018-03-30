@@ -51,7 +51,8 @@ dockerde相关文件都在`/var/lib/docker/`路径下
 > 该操作的作用:不用每次使用docker指令时都输入sudo
 1. 创建docker组
 `sudo groupadd docker`创建docker组
-2.
+2.为docker组添加用户
+`sudo usermod -aG docker $USER`,`$USER`表示当前的用户
 
 
 
