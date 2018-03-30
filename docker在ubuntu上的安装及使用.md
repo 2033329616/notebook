@@ -47,6 +47,32 @@ dockerde相关文件都在`/var/lib/docker/`路径下
 - 其他详细的安装详情见官网 [https://docs.docker.com/install/linux/docker-ce/ubuntu/#install-docker-ce-1][3]
 
 
+#### **4.创建docker组**
+> 该操作的作用:不用每次使用docker指令时都输入sudo
+1. 创建docker组
+`sudo groupadd docker`创建docker组
+2.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   [1]: ./images/Screenshot%20from%202018-03-30%2020-41-23.png "目前docker-ce的版本"
   [2]: ./images/Screenshot%20from%202018-03-30%2020-57-04.png "docker安装成功"
   [3]: https://docs.docker.com/install/linux/docker-ce/ubuntu/#install-docker-ce-1
