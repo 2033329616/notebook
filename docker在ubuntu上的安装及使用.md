@@ -77,9 +77,22 @@ dockerde相关文件都在`/var/lib/docker/`路径下
   `sudo tee /etc/apt/sources.list.d/nvidia-docker.list` 
  3. 更新仓库信息
  `sudo apt-get update`
-4. **安装nvidia-docker2并配置docker dameon**
+4. **安装nvidia-docker2并配置docker dameon加速镜像下载**
+安装nvidia的gpu支持:
  `sudo apt-get install -y nvidia-docker2`
- 
+ 修改`/etc/docker/daemon.json`文件内容如下:
+ ```json
+ {
+  "registry-mirrors": ["http://58167a06.m.daocloud.io"],
+  "runtimes": {
+        "nvidia": {
+            "path": "/usr/bin/nvidia-container-runtime",
+            "runtimeArgs": []
+        }
+    }
+}
+ ```
+ 其中链接部分是使用国内的加速镜像,这里使用dalcloud的加速镜像,如果使用阿里云的加速镜像,将链接替换为[https://8vntriz8.mirror.aliyuncs.com][6]
 `sudo pkill -SIGHUP dockerd`
 5. 测试安装情况
 `docker run --runtime=nvidia --rm nvidia/cuda nvidia-smi`
@@ -109,3 +122,4 @@ dockerde相关文件都在`/var/lib/docker/`路径下
   [3]: https://docs.docker.com/install/linux/docker-ce/ubuntu/#install-docker-ce-1
   [4]: ./images/Screenshot%20from%202018-03-30%2021-31-44.png "docker组的信息"
   [5]: ./images/Screenshot%20from%202018-03-30%2021-34-55.png "david用户加入docker用户组"
+  [6]: https://8vntriz8.mirror.aliyuncs.com
