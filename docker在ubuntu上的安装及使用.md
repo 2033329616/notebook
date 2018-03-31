@@ -109,7 +109,7 @@ dockerde相关文件都在`/var/lib/docker/`路径下
 使用指令`nvidia-docker run -it -p 8888:8888 tensorflow/tensorflow:<mirror tag>`下载并运行tag对应的镜像,这里使用tag为1.7.0-gpu-py3的镜像输出结果如下.
 
 ![运行tensorflow的镜像][10]
-将最下面的链接复制到浏览器就可以打开ipython notebook并使用对应的镜像环境了
+将最下面的链接复制到浏览器就可以打开ipython notebook并使用对应的镜像环境了.
 
 
 
