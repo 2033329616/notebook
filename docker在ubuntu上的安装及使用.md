@@ -106,8 +106,9 @@ dockerde相关文件都在`/var/lib/docker/`路径下
 - 打开tensorflow的docker[镜像仓库][8]如下:
 
 ![tensorflow镜像][9]
-使用指令`nvidia-docker run -it -p 8888:8888 tensorflow/tensorflow:<mirror tag>`下载并运行tag对应的镜像.
+使用指令`nvidia-docker run -it -p 8888:8888 tensorflow/tensorflow:<mirror tag>`下载并运行tag对应的镜像,这里使用tag为1.7.0-gpu-py3的镜像输出结果如下.
 
+![运行tensorflow的镜像][10]
 
 
 
@@ -127,4 +128,5 @@ dockerde相关文件都在`/var/lib/docker/`路径下
   [6]: https://8vntriz8.mirror.aliyuncs.com
   [7]: https://www.cnblogs.com/atuotuo/p/6264800.html
   [8]: https://hub.docker.com/r/tensorflow/tensorflow/tags/
-  [9]: ./images/Screenshot%20from%202018-03-31%2014-44-02.png "Screenshot from 2018-03-31 14-44-02"
+  [9]: ./images/Screenshot%20from%202018-03-31%2014-44-02.png "tensorflow的镜像"
+  [10]: ./images/Screenshot%20from%202018-03-31%2014-53-50.png "运行tensorflow的镜像"
