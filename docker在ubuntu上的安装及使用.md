@@ -135,27 +135,22 @@ dockerde相关文件都在`/var/lib/docker/`路径下
 - -t :分配一个伪终端,后面必须加`/bin/bash`
 
 3. 这里将`/home/david/docker/tensorflow`目录挂载到1.7.0-gpu-py3容器的`/notebooks/tensorflow`目录下,将主机的目录挂载到容器后,修改主机的文件,容器中的文件也会同步更新,这样比较方便,操作如下:
-`docker run -it -v <主机目录>:<容器挂载目录> <容器镜像>`,`-v`表示挂载目录的选项;**冒号**前面是主机目录,后面是容器目录;最后面接容器镜像
+`docker run -it -v <主机目录>:<容器挂载目录> <容器镜像> /bin/bash`, `-v`表示挂载目录的选项;**冒号**前面是主机目录,后面是容器目录;最后面接容器镜像
 
 >这里的挂载目录操作:
-> `docker run -it -v /home/david/docker/tensorflow:/notebooks/tensorflow tensorflow/tensorflow:1.7.0-gpu-py3`
+> `docker run -it -v /home/david/docker/tensorflow:/notebooks/tensorflow tensorflow/tensorflow:1.7.0-gpu-py3 /bin/bash`
 
 查看挂载结果如下:
 
+![enter description here][14]
+可以看出,在容器的`/notebooks`目录下已经出现了`tensorflow`目录,并且该文件夹下已经出现了在主机目录`/home/david/docker/tensorflow`里的`test.py`文件,即目录挂载成功.
+**注意:使用下面指令可以一步到位!打开ipython notebook并挂载主机目录到容器.**
+> ` docker run -it -v /home/david/docker/tensorflow:/notebooks/tensorflow -p 8888:8888 tensorflow/tensorflow:1.7.0-gpu-py3`
+
+运行结果:
+
 
  
-
-
-
-
-
-
-
-
-
-
-
-
 
 
   [1]: ./images/Screenshot%20from%202018-03-30%2020-41-23.png "目前docker-ce的版本"
@@ -171,3 +166,4 @@ dockerde相关文件都在`/var/lib/docker/`路径下
   [11]: ./images/Screenshot%20from%202018-03-31%2015-02-54.png "已下载的镜像信息"
   [12]: ./images/Screenshot%20from%202018-03-31%2023-04-59.png "查看目前运行的容器"
   [13]: ./images/Screenshot%20from%202018-03-31%2023-16-41.png "容器的主目录结构"
+  [14]: ./images/Screenshot%20from%202018-04-01%2000-04-35.png "主机目录的挂载结果"
