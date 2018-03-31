@@ -135,9 +135,11 @@ dockerde相关文件都在`/var/lib/docker/`路径下
 - -t :分配一个伪终端,后面必须加`/bin/bash`
 
 3. 这里将`/home/david/docker/tensorflow`目录挂载到1.7.0-gpu-py3容器的`/notebooks/tensorflow`目录下,将主机的目录挂载到容器后,修改主机的文件,容器中的文件也会同步更新,这样比较方便,操作如下:
-`docker run -it -v <主机目录>:<容器挂载目录> <容器镜像>`,`-v`表示挂载目录的选项;**冒号**前面是主机目录,后面是容器目录;后面接容器镜像
+`docker run -it -v <主机目录>:<容器挂载目录> <容器镜像>`,`-v`表示挂载目录的选项;**冒号**前面是主机目录,后面是容器目录;最后面接容器镜像
+
+>这里的挂载目录操作:
 > `docker run -it -v /home/david/docker/tensorflow:/notebooks/tensorflow tensorflow/tensorflow:1.7.0-gpu-py3`
- 
+
  
 
 
