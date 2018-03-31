@@ -144,12 +144,12 @@ dockerde相关文件都在`/var/lib/docker/`路径下
 
 ![enter description here][14]
 可以看出,在容器的`/notebooks`目录下已经出现了`tensorflow`目录,并且该文件夹下已经出现了在主机目录`/home/david/docker/tensorflow`里的`test.py`文件,即目录挂载成功.
-**注意:使用下面指令可以一步到位!打开ipython notebook并挂载主机目录到容器.**
+>**注意:使用下面指令可以一步到位!打开ipython notebook并挂载主机目录到容器.**
 > ` docker run -it -v /home/david/docker/tensorflow:/notebooks/tensorflow -p 8888:8888 tensorflow/tensorflow:1.7.0-gpu-py3`
 
 运行结果:
 
-
+![enter description here][15]
  
 
 
@@ -167,3 +167,4 @@ dockerde相关文件都在`/var/lib/docker/`路径下
   [12]: ./images/Screenshot%20from%202018-03-31%2023-04-59.png "查看目前运行的容器"
   [13]: ./images/Screenshot%20from%202018-03-31%2023-16-41.png "容器的主目录结构"
   [14]: ./images/Screenshot%20from%202018-04-01%2000-04-35.png "主机目录的挂载结果"
+  [15]: ./images/Screenshot%20from%202018-04-01%2000-16-54.png "运行结果"
