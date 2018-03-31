@@ -92,7 +92,7 @@ dockerde相关文件都在`/var/lib/docker/`路径下
     }
 }
  ```
- 其中链接部分是使用国内的加速镜像,这里使用dalcloud的加速镜像,如果使用阿里云的加速镜像,将链接替换为[https://8vntriz8.mirror.aliyuncs.com][6]
+ 其中链接部分是使用国内的加速镜像,这里使用dalcloud的加速镜像,如果使用阿里云的加速镜像,将链接替换为[https://8vntriz8.mirror.aliyuncs.com][6]即可.
 `sudo pkill -SIGHUP dockerd`
 5. 测试安装情况
 `docker run --runtime=nvidia --rm nvidia/cuda nvidia-smi`
