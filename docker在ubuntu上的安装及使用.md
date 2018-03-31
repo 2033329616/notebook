@@ -120,13 +120,25 @@ dockerde相关文件都在`/var/lib/docker/`路径下
 - 使用`docker rmi -f <IMAGE ID>` 删除对应ID号的镜像.
 
 #### **6.将主机的目录挂载到容器中**
+1. 首先使用`docker ps`查看目前运行的容器,结果如下:
 
-将主机的目录挂载到容器后,修改主机的文件,容器中的文件也会同步更新,这样比较方便.
-- 这里将`/home/david/docker/tensorflow`目录挂载到1.7.0-gpu-py3容器的`/notebooks/tensorflow`目录下
+![enter description here][12]
+
+2. 使用`docker exec -it 2783ad1bf2dc /bin/bash`登录该容器,其中`2783ad1bf2dc`为第一步的结果中看到的容器ID号,登录的结果如下:
+
+![enter description here][13]
+> 登录成功后,终端的用户和工作组组也随着改变,该容器的目录结构与一般的Linux相同
+
+> OPTIONS说明：
+ -  -d :分离模式: 在后台运行
+ -  -i :标准输入,即使没有附加也保持STDIN 打开
+- -t :分配一个伪终端,后面必须加`/bin/bash`
+
+3. 这里将`/home/david/docker/tensorflow`目录挂载到1.7.0-gpu-py3容器的`/notebooks/tensorflow`目录下,将主机的目录挂载到容器后,修改主机的文件,容器中的文件也会同步更新,这样比较方便,操作如下
 
 > `docker run -it -v /home/david/docker/tensorflow:/notebooks/tensorflow tensorflow/tensorflow:1.7.0-gpu-py3 /bin/bash`
  
- 这里的 
+ 冒号隔开前面是主机目录,后面是容器目录
 
 
   [1]: ./images/Screenshot%20from%202018-03-30%2020-41-23.png "目前docker-ce的版本"
@@ -140,3 +152,5 @@ dockerde相关文件都在`/var/lib/docker/`路径下
   [9]: ./images/Screenshot%20from%202018-03-31%2014-44-02.png "tensorflow的镜像"
   [10]: ./images/Screenshot%20from%202018-03-31%2014-53-50.png "运行tensorflow的镜像"
   [11]: ./images/Screenshot%20from%202018-03-31%2015-02-54.png "已下载的镜像信息"
+  [12]: ./images/Screenshot%20from%202018-03-31%2023-04-59.png "查看目前运行的容器"
+  [13]: ./images/Screenshot%20from%202018-03-31%2023-16-41.png "容器的主目录结构"
