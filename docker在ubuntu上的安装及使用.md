@@ -113,10 +113,11 @@ dockerde相关文件都在`/var/lib/docker/`路径下
 
 - 注意:首次运行上面的指令会下载对应tag的镜像,之后运行可以直接从本地读取该镜像.
 
-使用`docker images`查看已下载镜像信息,结果如下:
+- 使用`docker images`查看已下载镜像信息,结果如下:
+
 
 ![enter description here][11]
-使用`docker rmi -f <IMAGE ID>` 删除对应ID号的镜像.
+- 使用`docker rmi -f <IMAGE ID>` 删除对应ID号的镜像.
 
 
 
