@@ -140,6 +140,9 @@ dockerde相关文件都在`/var/lib/docker/`路径下
 >这里的挂载目录操作:
 > `docker run -it -v /home/david/docker/tensorflow:/notebooks/tensorflow tensorflow/tensorflow:1.7.0-gpu-py3`
 
+查看挂载结果如下:
+
+
  
 
 
