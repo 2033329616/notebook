@@ -111,8 +111,11 @@ dockerde相关文件都在`/var/lib/docker/`路径下
 ![运行tensorflow的镜像][10]
 将最下面的链接复制到浏览器就可以打开ipython notebook并使用对应的镜像环境了.
 
+- 注意:首次运行上面的指令会下载对应tag的镜像,之后运行可以直接从本地读取该镜像.
+使用`docker images`查看已下载镜像信息,结果如下:
 
-
+![enter description here][11]
+使用`docker`
 
 
 
@@ -130,3 +133,4 @@ dockerde相关文件都在`/var/lib/docker/`路径下
   [8]: https://hub.docker.com/r/tensorflow/tensorflow/tags/
   [9]: ./images/Screenshot%20from%202018-03-31%2014-44-02.png "tensorflow的镜像"
   [10]: ./images/Screenshot%20from%202018-03-31%2014-53-50.png "运行tensorflow的镜像"
+  [11]: ./images/Screenshot%20from%202018-03-31%2015-02-54.png "已下载的镜像信息"
