@@ -119,7 +119,7 @@ dockerde相关文件都在`/var/lib/docker/`路径下
 ![enter description here][11]
 - 使用`docker rmi -f <IMAGE ID>` 删除对应ID号的镜像.
 
-
+#### **6.将主机的目录挂载到容器中**
 
 
   
