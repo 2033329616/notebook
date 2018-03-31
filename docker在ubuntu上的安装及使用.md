@@ -19,7 +19,7 @@ dockerde相关文件都在`/var/lib/docker/`路径下
  2. 安装包来使apt通过HTTPS来使用docker仓库
   `sudo apt-get install apt-transport-https ca-certificates \`
   `curl software-properties-common`	
- 3. 添加docker的官方GPG
+ 3. 添加docker的官方GPG证书
 `curl -fsSL https://download.docker.com/linux/ubuntu/gpg \`
 `| sudo apt-key add -`
 4. 验证是否添加成功带有fingerprint的key
@@ -86,7 +86,9 @@ dockerde相关文件都在`/var/lib/docker/`路径下
 
 
 
-
+```
+333333333333333333333333333333333333333333333333333333333dasdadsadasdddd
+```
 
 
 
