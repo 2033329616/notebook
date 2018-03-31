@@ -77,7 +77,7 @@ dockerde相关文件都在`/var/lib/docker/`路径下
   `sudo tee /etc/apt/sources.list.d/nvidia-docker.list` 
  3. 更新仓库信息
  `sudo apt-get update`
- 4. 安装nvidia-docker2并配置docker dameon
+4. **安装nvidia-docker2并配置docker dameon**
  `sudo apt-get install -y nvidia-docker2`
  
 `sudo pkill -SIGHUP dockerd`
