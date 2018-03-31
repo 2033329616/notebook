@@ -102,9 +102,7 @@ dockerde相关文件都在`/var/lib/docker/`路径下
 5. 测试安装情况
 `docker run --runtime=nvidia --rm nvidia/cuda nvidia-smi`会下载cuda镜像来测试
 
-
-
-
+#### **5.使用docker安装tensorflow**
 
 
 
