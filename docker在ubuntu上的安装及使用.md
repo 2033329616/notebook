@@ -122,7 +122,7 @@ dockerde相关文件都在`/var/lib/docker/`路径下
 #### **6.将主机的目录挂载到容器中**
 
 将主机的目录挂载到容器后,修改主机的文件,容器中的文件也会同步更新,这样比较方便.
-- 这里将`/home/david/docker/tensorflow`目录挂载到1.7.0-gpu-py3容器的`/notebooks`目录下
+- 这里将`/home/david/docker/tensorflow`目录挂载到1.7.0-gpu-py3容器的`/notebooks/tensorflow`目录下
 
 > `docker run -it -v /home/david/docker/tensorflow:/notebooks/tensorflow tensorflow/tensorflow:1.7.0-gpu-py3 /bin/bash`
  
