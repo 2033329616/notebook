@@ -67,12 +67,12 @@ dockerde相关文件都在`/var/lib/docker/`路径下
 `xargs -r docker rm -f`
 `sudo apt-get purge -y nvidia-docker`
 2. 添加仓库
- 添加key:
+  - 添加key:
 `curl -s -L https://nvidia.github.io/nvidia-docker/gpgkey | \
   sudo apt-key add -`
-  获取系统版本号:
+  -  获取系统版本号:
  `distribution=$(. /etc/os-release;echo $ID$VERSION_ID)` 
- 添加仓库:
+  - 添加仓库:
  `curl -s -L https://nvidia.github.io/nvidia-docker/$distribution/nvidia-docker.list | \`
   `sudo tee /etc/apt/sources.list.d/nvidia-docker.list` 
  3. 更新仓库信息
@@ -98,7 +98,6 @@ dockerde相关文件都在`/var/lib/docker/`路径下
 `sudo pkill -SIGHUP dockerd`
 `sudo systemctl daemon-reload`
 `sudo systemctl restart docker`
-
 
 5. 测试安装情况
 `docker run --runtime=nvidia --rm nvidia/cuda nvidia-smi`
