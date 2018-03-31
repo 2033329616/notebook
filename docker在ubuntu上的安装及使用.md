@@ -125,7 +125,8 @@ dockerde相关文件都在`/var/lib/docker/`路径下
 - 这里将`/home/david/docker/tensorflow`目录挂载到1.7.0-gpu-py3容器的`/notebooks`目录下
 
 > `docker run -it -v /home/david/docker/tensorflow:/notebooks/tensorflow tensorflow/tensorflow:1.7.0-gpu-py3 /bin/bash`
-  
+ 
+ 这里的 
 
 
   [1]: ./images/Screenshot%20from%202018-03-30%2020-41-23.png "目前docker-ce的版本"
