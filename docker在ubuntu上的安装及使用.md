@@ -127,7 +127,7 @@ dockerde相关文件都在`/var/lib/docker/`路径下
 2. 使用`docker exec -it 2783ad1bf2dc /bin/bash`登录该容器,其中`2783ad1bf2dc`为第一步的结果中看到的容器ID号,登录的结果如下:
 
 ![enter description here][13]
-> 登录成功后,终端的用户和工作组组也随着改变,该容器的目录结构与一般的Linux相同,输入`exit`或使用按键`ctrl + d`退出登录状态
+> 登录成功后,终端的用户和工作组组也随着改变,该容器的目录结构与一般的Linux相同,输入`exit`或使用按键`ctrl + d`退出登录状态.
 
 > OPTIONS说明：
  -  -d :分离模式: 在后台运行
