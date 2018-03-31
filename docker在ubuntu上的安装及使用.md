@@ -103,8 +103,10 @@ dockerde相关文件都在`/var/lib/docker/`路径下
 `docker run --runtime=nvidia --rm nvidia/cuda nvidia-smi`会下载cuda镜像来测试
 
 #### **5.使用docker安装tensorflow**
+- 打开tensorflow的docker[镜像仓库][8]如下:
 
-
+![tensorflow镜像][9]
+使用指令`nvidia-docker run -it -p 8888:8888 tensorflow/tensorflow:<mirror tag>`下载并运行tag对应的镜像.
 
 
 
@@ -124,3 +126,5 @@ dockerde相关文件都在`/var/lib/docker/`路径下
   [5]: ./images/Screenshot%20from%202018-03-30%2021-34-55.png "david用户加入docker用户组"
   [6]: https://8vntriz8.mirror.aliyuncs.com
   [7]: https://www.cnblogs.com/atuotuo/p/6264800.html
+  [8]: https://hub.docker.com/r/tensorflow/tensorflow/tags/
+  [9]: ./images/Screenshot%20from%202018-03-31%2014-44-02.png "Screenshot from 2018-03-31 14-44-02"
