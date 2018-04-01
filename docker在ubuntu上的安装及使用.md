@@ -120,7 +120,7 @@ dockerde相关文件都在`/var/lib/docker/`路径下
 - 使用`docker rmi -f <IMAGE ID>` 删除对应ID号的镜像.
 
 #### **6.将主机的目录挂载到容器中**
-1. 首先使用`docker ps`查看目前运行的容器，结果如下，使用`docker kill <container ID>关闭ID号对应的容器`:
+1. 首先使用`docker ps`查看目前运行的容器，结果如下，使用`docker kill <container ID>`关闭ID号对应的容器:
 
 ![enter description here][12]
 
